@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Celebrities</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Celebrities</h1>
+    <label id="regionLabel" for="region">Select a region: </label>
+    <select id="region">
+      <option value="world">World</option>
+      <option value="europe">Europe</option>
+      <option value="latvia">Latvia</option>
+    </select>
+  </header>
+
+  <section>
+    <div id="world">
+      <h2>World</h2>
+      <div class="celebrity-card">
+        <img src="https://unsplash.com/photos/people-in-black-and-yellow-shirts-standing-on-stage-2xEgiu1hi6Q" alt="Celebrity 1">
+        <h3>Celebrity 1</h3>
+        <p>Biography of Celebrity 1.</p>
+      </div>
+    </div>    
+      <div class="celebrity-card">
+        <img src="celebrity2.jpg" alt="Celebrity 2">
+        <h3>Celebrity 2</h3>
+        <p>Biography of Celebrity 2.</p>
+      </div>
+    </div>
+
+    <div id="europe" style="display: none;">
+      <h2>Europe</h2>
+      <div class="celebrity-card">
+        <img src="celebrity3.jpg" alt="Celebrity 3">
+        <h3>Celebrity 3</h3>
+        <p>Biography of Celebrity 3.</p>
+      </div>
+      <div class="celebrity-card">
+        <img src="celebrity4.jpg" alt="Celebrity 4">
+        <h3>Celebrity 4</h3>
+        <p>Biography of Celebrity 4.</p>
+      </div>
+    </div>
+
+    <div id="latvia" style="display: none;">
+      <h2>Latvia</h2>
+      <div class="celebrity-card">
+        <img src="celebrity5.jpg" alt="Celebrity 5">
+        <h3>Celebrity 5</h3>
+        <p>Biography of Celebrity 5.</p>
+      </div>
+      <div class="celebrity-card">
+        <img src="celebrity6.jpg" alt="Celebrity 6">
+        <h3>Celebrity 6</h3>
+        <p>Biography of Celebrity 6.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('region').addEventListener('change', function() {
+      var selectedRegion = this.value;
+      document.getElementById('world').style.display = 'none';
+      document.getElementById('europe').style.display = 'none';
+      document.getElementById('latvia').style.display = 'none';
+      document.getElementById(selectedRegion).style.display = 'block';
+    });
+  </script>
+</body>
+</html>
