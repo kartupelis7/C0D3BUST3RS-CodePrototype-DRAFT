@@ -96,3 +96,31 @@ select {
 #category {
   width: 130px;
 }
+.footer_bg {
+  background-color: #2980b9;
+}
+.container_footer {
+  width: 1010px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.red_txt {
+  color: #000000;
+  padding-left: 7px;
+  font-weight: bold;
+}
+.footer_txt {
+  color: white;
+  font-size: 20px;
+  font-family: PTSerif;
+  line-height: 20px; 
+  margin: 0;
+  display: flex;  
+  align-items: center;
+}
+#footer_icon {
+  font-size: 20px;
+}
