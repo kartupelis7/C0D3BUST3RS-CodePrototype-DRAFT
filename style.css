@@ -1,56 +1,98 @@
 body {
-    background-color: #3498db;
-    color: #000000;
-    font-family: Arial, sans-serif;
-  }
-  #region {
-    color: white;
-  }
-  header {
-    background-color: #2980b9;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 36px;
-    color: white;
-  }
-  
-  select {
-    padding: 10px;
-    border: none;
-    background-color: #2980b9;
-    color: #ffffff;
-    font-size: 16px;
-  }
-  
-  section {
-    margin: 20px;
-  }
-  
-  .celebrity-card {
-    background-color: #ffffff;
-    border: 1px solid #2980b9;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .celebrity-card img {
-    max-width: 100%;
-    border-radius: 5px;
-  }
-  
-  .celebrity-card h3 {
-    font-size: 24px;
-    margin: 10px 0;
-  }
-  
-  .celebrity-card p {
-    font-size: 16px;
-  }
-  h2 {
-    color: white;
-  }
+  background-color: #3498db;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  position: relative; /* Для позиционирования иконки */
+}
+
+header {
+  background-color: #2980b9;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Для позиционирования иконки */
+}
+
+h1 {
+  font-size: 60px;
+}
+
+select {
+  padding: 0px;
+  border: none;
+  background-color: #2980b9;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+section {
+  margin: 20px;
+}
+
+.celebrity-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.celebrity-card {
+  background-color: #ffffff;
+  border: 1px solid #2980b9;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  display: block;
+}
+
+.celebrity-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.celebrity-card h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.celebrity-card p {
+  font-size: 16px;
+}
+
+.sport { background-color: #a1d8e5; }
+.music { background-color: #a1d8e5; }
+.business { background-color: #a1d8e5; }
+.other { background-color: #a1d8e5; }
+
+#home-icon {
+  position: absolute;
+  left: 30px; /* Положение иконки слева */
+  top: 10px; /* Положение иконки сверху */
+  font-size: 50px; /* Размер иконки */
+  cursor: pointer; /* Изменение курсора при наведении на иконку */
+  padding-top: 50px;
+}
+h2 {
+  font-size: 50px;
+}
+label {
+  font-size: 25px;
+}
+select {
+  font-size: 25px;
+  text-align: center;
+}
+#label_category {
+  padding-left: 70px;
+}
+#header_box {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#region_choise {
+  display: flex;
+  align-items: center;
+}
+#category {
+  width: 130px;
+}
